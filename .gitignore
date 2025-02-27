@@ -135,8 +135,8 @@ Build
 /.vscode
 
 # environment
-!Pipfile
-!Pipfile.lock
+Pipfile
+Pipfile.lock
 
 # templates
 !*.mustache
