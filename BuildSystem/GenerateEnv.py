@@ -1,9 +1,6 @@
 import sys
 from pathlib import Path
 
-tools_package_location = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(tools_package_location))
-
 from BuildSystem.VenvHelper import get_executable_path
 from Utilities.Logger import Logger
 

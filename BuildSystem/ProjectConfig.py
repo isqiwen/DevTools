@@ -1,8 +1,4 @@
-import sys
 from pathlib import Path
-
-tools_package_location = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(tools_package_location))
 
 from Utilities.Logger import Logger
 from Utilities.Platform import Platform

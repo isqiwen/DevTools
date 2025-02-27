@@ -1,10 +1,3 @@
-import sys
-from pathlib import Path
-
-tools_package_location = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(tools_package_location))
-
-from BuildSystem.ProjectConfig import ProjectConfig
 from Utilities.Logger import Logger
 
 from BuildSystem.ConanHelper import install_conan, configure_conan
@@ -27,6 +20,4 @@ def conan_setup():
 
 
 if __name__ == "__main__":
-    ProjectConfig.initialize(tools_package_location / "res" / "config" / "project_config.json")
-
     conan_setup()

@@ -3,9 +3,6 @@ import sys
 import argparse
 from pathlib import Path
 
-tools_package_location = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(tools_package_location))
-
 from Utilities.Logger import Logger
 from BuildSystem.ConanSetup import conan_setup
 from BuildSystem.GenerateEnv import generate_env_file

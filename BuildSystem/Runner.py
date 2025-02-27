@@ -1,9 +1,4 @@
-import sys
-from pathlib import Path
 import argparse
-
-tools_package_location = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(tools_package_location))
 
 from BuildSystem.ProjectConfig import ProjectConfig
 from BuildSystem.Builder import Builder

@@ -3,8 +3,8 @@ import argparse
 import importlib
 from pathlib import Path
 
-tools_package_location = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(tools_package_location))
+dev_tools_package_location = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(dev_tools_package_location))
 
 
 SUBCOMMANDS = {
