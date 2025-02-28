@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 
 from BuildSystem.VenvHelper import get_executable_path
+from BuildSystem.ProjectConfig import ProjectConfig
 from Utilities.Logger import Logger
 
 def generate_env_file():
@@ -29,7 +30,7 @@ def generate_env_file():
             Logger.Warning(f"{tool} not found in .venv.")
 
     # Define the .vscode directory and .env file path
-    workspace_dir = tools_package_location
+    workspace_dir = ProjectConfig.PROJECT_ROOT
     vscode_dir = workspace_dir / ".vscode"
     vscode_dir.mkdir(exist_ok=True)
     env_file_path = vscode_dir / ".env"
