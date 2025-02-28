@@ -61,7 +61,7 @@ class ProjectConfig:
 
         # Assign configuration values
         cls.PROJECT_NAME = config_data.get("project_name")
-        cls.PROJECT_ROOT = Path(config_data.get("project_root"))
+        cls.PROJECT_ROOT = Path(config_data.get("project_root")).resolve()
         cls.BUILD_DIR = config_data.get("build_dir")
         cls.SOURCE_DIR = config_data.get("source_dir")
         cls.DIST_DIR = config_data.get("dist_dir")
