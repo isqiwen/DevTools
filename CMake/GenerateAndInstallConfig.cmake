@@ -5,7 +5,7 @@ include(CMakePackageConfigHelpers)
 
 # Generate package config files
 configure_package_config_file(
-    "${PROJECT_SOURCE_DIR}/CMake/${PROJECT_NAME}Config.cmake.in"
+    "${CMAKE_CURRENT_LIST_DIR}/ProjectConfig.cmake.in"
     "${PROJECT_BINARY_DIR}/${PROJECT_NAME}Config.cmake"
     INSTALL_DESTINATION
         ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}

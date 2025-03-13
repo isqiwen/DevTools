@@ -116,4 +116,4 @@ else()
 endif()
 
 # Generate and install project config
-include(cmake/GenerateAndInstallConfig.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/GenerateAndInstallConfig.cmake)

@@ -13,11 +13,11 @@ target_include_directories(ProjectOptions INTERFACE
 )
 
 # Enable compiler flags
-include(cmake/PlatformSettings.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/PlatformSettings.cmake)
 set_platform_general_settings(ProjectOptions)
 
 # Enable compiler warnings
-include(cmake/CompilerWarnings.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/CompilerWarnings.cmake)
 set_project_warnings(ProjectOptions)
 
 # Include GNU standard installation module
