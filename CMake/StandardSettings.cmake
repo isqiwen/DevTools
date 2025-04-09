@@ -38,7 +38,7 @@ option(${PROJECT_NAME}_USE_CATCH2 "Use the Catch2 project for creating unit test
 # Benchmarks
 #
 
-option(${PROJECT_NAME}_ENABLE_BENCHMARKS "Enable benchmarks for the projects (from the `benchmarks` subfolder)." OFF)
+option(${PROJECT_NAME}_ENABLE_BENCHMARKS "Enable benchmarks for the projects (from the `benchmarks` subfolder)." ON)
 
 #
 # Static analyzers
